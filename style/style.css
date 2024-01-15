@@ -206,9 +206,8 @@ ul>li {
 
 .WhyChooseUs-content {
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     gap: 24px;
 }
 
@@ -235,14 +234,6 @@ ul>li {
     padding: 32px;
 }
 
-.hotel-card img, .service-card img, .Guarantee-card img {
-    width: 64px;
-    height: 64px;
-    padding-bottom: 32px;
-}
-
-
-
 .Guarantee-card {
     width: 573px;
     border-radius: 16px;
@@ -250,8 +241,15 @@ ul>li {
     background: rgba(251, 181, 99, 0.05);
     padding: 32px;
     margin: 20px auto;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
+
+.hotel-card img, .service-card img, .Guarantee-card img {
+    width: 64px;
+    height: 64px;
+    padding-bottom: 32px;
+}
+
 
 /* Responsive  part*/
 
@@ -260,7 +258,6 @@ ul>li {
     .primary-txt {
         font-size: 14px;
         font-weight: 400;
-
     }
 
     .head-section {
@@ -327,8 +324,11 @@ ul>li {
         max-width: 255px;
     }
 
-    .popular-tour {
+    .popular-tour,
+    .upper-part,
+    .WhyChooseUs-content {
         flex-direction: column;
+
     }
 
     .tours-img {
@@ -344,13 +344,9 @@ ul>li {
         margin-top: 0;
     }
 
-    .destination-content p {
+    .destination-content p,
+    .primary-content p {
         width: 360px;
-    }
-
-    .upper-part {
-        flex-direction: column;
-
     }
 
     .destination-content-img {
@@ -365,6 +361,10 @@ ul>li {
         height: 176px;
     }
 
+
+    .hotel-card, .service-card, .Guarantee-card {
+        width: 309px;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:992px) {
