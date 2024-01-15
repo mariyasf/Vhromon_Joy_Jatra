@@ -250,6 +250,89 @@ ul>li {
     padding-bottom: 32px;
 }
 
+/* deal-discount */
+.deal-discount {
+    background-image: url('../Images/Group-39.png');
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.deal-discount .card {
+    margin-top: 50px;
+    margin-left: 535px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+
+
+}
+
+.deal-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-right: 140px;
+}
+
+.deal-nav li {
+    list-style: none;
+}
+
+.deal-nav li svg {
+
+    margin-right: 10px;
+}
+
+.card-description {
+    width: 573px;
+    border-radius: 16px;
+    padding-left: 40px;
+    margin: 20px auto;
+}
+
+.card-description>p {
+    width: 550px;
+}
+
+.card-description * {
+    padding: 10px 0;
+}
+
+.deal-discount2 {
+    background-image: url('../Images/Group-40.png');
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.deal-discount2 .card {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: absolute;
+
+
+}
+
+.optional>button {
+    margin: 20px auto;
+    width: 210px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+
+}
 
 /* Responsive  part*/
 
@@ -326,7 +409,7 @@ ul>li {
 
     .popular-tour,
     .upper-part,
-    .WhyChooseUs-content {
+    .deal-nav, .WhyChooseUs-content {
         flex-direction: column;
 
     }
@@ -365,12 +448,28 @@ ul>li {
     .hotel-card, .service-card, .Guarantee-card {
         width: 309px;
     }
+
+    .deal-discount .card, .deal-discount2 .card {
+        width: 335px;
+        height: 500px;
+        flex-shrink: 0;
+        margin: 24px
+    }
+
+    .card-description>p {
+        width: 254px;
+    }
+
+
+
+
 }
 
 @media screen and (min-width:600px) and (max-width:992px) {
     .primary-txt {
         font-size: 14px;
         font-weight: 400;
+
     }
 
     .head-section {
@@ -446,6 +545,16 @@ ul>li {
 
     .destination-content p {
         width: 500px;
+    }
+
+    .deal-discount .card, .deal-discount2 .card {
+        width: 500px;
+        flex-shrink: 0;
+        margin: 24px
+    }
+
+    .card-description>p {
+        width: 254px;
     }
 
 }
