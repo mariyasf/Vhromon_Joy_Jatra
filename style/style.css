@@ -450,19 +450,9 @@ ul>li {
     position: relative;
 }
 
-.clint-cmnt>img {
-    position: absolute;
-    left: -25px;
-    top: -25px;
-    border-radius: 50%;
-    border: 3px solid white;
-}
 
-.circle {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-}
+
+
 
 .clint-cmnt-section h3 {
     color: var(--Dark-01, #1C1C1C);
