@@ -391,6 +391,124 @@ ul>li {
     height: auto;
 }
 
+/* super-clint */
+
+.super-clint {
+    background-image: url('../Images/Group4.png'), linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+.super-clint-content {
+    background-image: url('../images/bg_cup.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-left: 70px;
+    padding-top: 177px;
+}
+
+.super-clint-content>h2 {
+    color: var(--Dark-07, #F4F4F4);
+    font-size: 45px;
+    max-width: 400px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+
+.super-clint-content>p {
+    color: var(--Dark-07, #F4F4F4);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 500px;
+    padding-bottom: 30px;
+}
+
+
+.super-clint-comment {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    /* align-items: center; */
+
+}
+
+.clint-cmnt {
+    width: 433px;
+    border-radius: 8px;
+    text-align: left;
+    padding: 50px;
+    position: relative;
+}
+
+.clint-cmnt>img {
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.circle {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.clint-cmnt-section h3 {
+    color: var(--Dark-01, #1C1C1C);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 20px;
+    /* padding-bottom: 10px; */
+}
+
+.clint-cmnt-section p {
+    max-width: 340px;
+}
+
+.clint-cmnt-section span {
+    color: #5D5A6F;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.clint-cmnt-div1 {
+    position: absolute;
+    top: 32%;
+    right: 140px;
+    left: -120px;
+    z-index: 15;
+    background-color: aliceblue;
+}
+
+.clint-cmnt-div2 {
+    bottom: 30px;
+    right: 60px;
+    /* position: fixed; */
+    background-color: aliceblue;
+    opacity: 0.3;
+}
+
+.clint-cmnt-div3 {
+    top: 30px;
+    right: 60px;
+    bottom: 0;
+    background-color: aliceblue;
+    opacity: 0.3;
+
+}
+
 /* newsletter */
 .newsletter {
     margin-top: 120px;
@@ -592,7 +710,8 @@ hr {
     .deal-nav,
     .perfect-place,
     .WhyChooseUs-content,
-    .newsletter {
+    .newsletter,
+    .super-clint {
         flex-direction: column;
 
     }
@@ -638,7 +757,9 @@ hr {
     }
 
 
-    .hotel-card, .service-card, .Guarantee-card {
+    .hotel-card,
+    .service-card,
+    .Guarantee-card {
         width: 400px;
         margin: 0 30px;
     }
@@ -652,7 +773,8 @@ hr {
         padding: 20px;
     }
 
-    .deal-discount .card, .deal-discount2 .card {
+    .deal-discount .card,
+    .deal-discount2 .card {
         width: 400px;
         margin: 10px;
         margin-top: 80px;
@@ -660,6 +782,20 @@ hr {
 
     .card-description>p {
         width: 304px;
+    }
+
+    .super-clint-comment {
+        display: block;
+    }
+
+    .clint-cmnt-div1,
+    .clint-cmnt-div2,
+    .clint-cmnt-div3 {
+        position: static;
+        background-color: aliceblue;
+        opacity: .3;
+        margin-bottom: 20px;
+        width: 400px;
     }
 
     .newsletter-content {
@@ -690,6 +826,7 @@ hr {
         bottom: 50px;
         right: 10px;
     }
+
 
     footer {
         margin-top: 0;
@@ -730,9 +867,6 @@ hr {
         margin: 0 auto;
     }
 
-    /* .popular-tour {
-        flex-direction: column;
-    } */
 
     .head-section {
         text-align: center;
@@ -828,7 +962,8 @@ hr {
         width: 500px;
     }
 
-    .deal-discount .card, .deal-discount2 .card {
+    .deal-discount .card,
+    .deal-discount2 .card {
         width: 500px;
         flex-shrink: 0;
         margin: 24px
@@ -838,8 +973,23 @@ hr {
         width: 254px;
     }
 
+    .super-clint-comment {
+        display: block;
+    }
+
+    .clint-cmnt-div1,
+    .clint-cmnt-div2,
+    .clint-cmnt-div3 {
+        position: static;
+        background-color: aliceblue;
+        opacity: .3;
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
     .perfect-place,
-    .newsletter {
+    .newsletter,
+    .super-clint {
         flex-direction: column;
     }
 
