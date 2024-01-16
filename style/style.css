@@ -334,6 +334,83 @@ ul>li {
 
 }
 
+
+/* perfect-place */
+.perfect-place {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.tour-video video {
+    width: 100%;
+    height: auto;
+}
+
+/* newsletter */
+.newsletter {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.newsletter-content {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 600px;
+    padding: 30px;
+}
+
+.newsletter-content p {
+    padding-top: 15px;
+}
+
+.newsletter-content form {
+    border-top: 1px solid rgba(19, 19, 24, 0.10);
+    margin-top: 20px;
+
+}
+
+.newsletter-content form * {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.newsletter-content form input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 20px 10px;
+    border-style: none;
+}
+
+.newsletter-content form button {
+    width: 420px;
+}
+
+.news-img {
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.news-img-content {
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
 /* Responsive  part*/
 
 /* Small devices */
@@ -409,7 +486,10 @@ ul>li {
 
     .popular-tour,
     .upper-part,
-    .deal-nav, .WhyChooseUs-content {
+    .deal-nav,
+    .perfect-place,
+    .WhyChooseUs-content,
+    .newsletter {
         flex-direction: column;
 
     }
@@ -418,13 +498,12 @@ ul>li {
         width: 380px;
     }
 
-    .tours-img img {
-        width: 100%;
-        height: 100%;
+    .tours-img img, .news-img img {
+        width: 90%;
     }
 
-    .destination-content {
-        margin-top: 0;
+    .primary-content {
+        margin-top: 50px;
     }
 
     .destination-content p,
@@ -446,23 +525,56 @@ ul>li {
 
 
     .hotel-card, .service-card, .Guarantee-card {
-        width: 309px;
+        width: 290px;
+    }
+
+    .deal-discount, .deal-discount2 {
+        height: 600px;
+    }
+
+    .deal-nav {
+        margin: 20px;
+        padding: 20px;
     }
 
     .deal-discount .card, .deal-discount2 .card {
-        width: 335px;
-        height: 500px;
-        flex-shrink: 0;
-        margin: 24px
+        width: 320px;
+        margin: 10px;
+        margin-top: 80px;
+    }
+
+    .card-description>h3 {
+        margin-top: 5px;
     }
 
     .card-description>p {
         width: 254px;
     }
 
+    .newsletter-content {
+        width: 300px;
+    }
 
+    .newsletter-content form * {
+        width: 280px;
+    }
 
+    .newsletter-content form button {
+        width: 300px;
+    }
 
+    .news-img {
+        width: 400px;
+        height: 230px;
+    }
+
+    .news-img-content {
+        width: 214.023px;
+        height: 79.268px;
+        padding-top: 10px;
+        bottom: 40px;
+        right: 50px;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:992px) {
@@ -510,6 +622,10 @@ ul>li {
         margin: 50px 40px;
     }
 
+    .primary-content {
+        margin-top: 80px;
+    }
+
     .header-title {
         padding-top: 32px;
         font-size: 50px;
@@ -539,6 +655,10 @@ ul>li {
         height: 100%;
     }
 
+    .destination {
+        margin: 0;
+    }
+
     .destination-content {
         margin-top: 0;
     }
@@ -557,4 +677,39 @@ ul>li {
         width: 254px;
     }
 
+    .perfect-place,
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-content {
+        width: 600px;
+    }
+
+    .newsletter-content form * {
+        width: 580px;
+        margin-top: 20px;
+    }
+
+    .newsletter-content form input {
+        margin-right: 30px;
+    }
+
+    .newsletter-content form button {
+        width: 150px;
+    }
+
+    .news-img img {
+        width: 650px;
+        height: 400px;
+    }
+
+
+    .news-img-content {
+        width: 324px;
+        height: 100px;
+        padding-top: 30px;
+        bottom: 80px;
+        right: 40px;
+    }
 }
