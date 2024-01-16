@@ -70,6 +70,7 @@
     border-radius: 16px;
     text-align: center;
     height: 500px;
+    margin: 0 auto;
 }
 
 nav {
@@ -139,7 +140,14 @@ ul>li {
     width: 174px;
 }
 
+.heade-selection select {
+    background: white;
+    border-style: none;
+    width: 195px;
+}
+
 .heade-selection button {
+
     display: flex;
     gap: 8px;
 }
@@ -161,10 +169,13 @@ ul>li {
     color: rgba(19, 19, 24, 0.70);
 }
 
+.tours-descrioption li {
+    margin-left: 10px;
+}
+
 .tours-img {
     border-radius: 16px;
     width: 540px;
-    /* height: 550px; */
 }
 
 /* Choose Your Destination */
@@ -172,25 +183,59 @@ ul>li {
     text-align: center;
 }
 
-
 .destination-content-img {
-    margin-bottom: 12px;
-}
-
-.upper-part {
-    display: flex;
-    justify-content: space-between;
-}
-
-.image-container {
-    position: relative;
-    margin: 12px;
-}
-
-.destination-content-img .upper-part img {
+    gap: 16px;
     width: 100%;
-    height: auto;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, fr);
+}
+
+.destination-content-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container1 {
+    grid-column: 1/span 6;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container2 {
+    grid-column: 7/span 6;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container3 {
+    grid-column: 1/span 4;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container4 {
+    grid-column: 5/span 4;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container5 {
+    grid-column: 9/span 4;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container6 {
+    grid-column: 1/span 6;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-container7 {
+    grid-column: 7/span 6;
+    position: relative;
+    object-fit: cover;
 }
 
 .centered-content {
@@ -206,9 +251,10 @@ ul>li {
 
 .WhyChooseUs-content {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
     gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .WhyChooseUs-content h3, .Guarantee-card h3 {
@@ -219,29 +265,28 @@ ul>li {
 }
 
 .hotel-card {
-    width: 573px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     padding: 32px;
+    grid-column: 1/span 6;
 }
 
 .service-card {
-    width: 573px;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
     padding: 32px;
+    grid-column: 7/span 6;
 }
 
 .Guarantee-card {
-    width: 573px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     padding: 32px;
     margin: 20px auto;
-    /* margin-bottom: 0; */
+    grid-column: 4/span 6;
 }
 
 .hotel-card img, .service-card img, .Guarantee-card img {
@@ -257,19 +302,17 @@ ul>li {
     border-radius: 16px;
     background-size: cover;
     height: 500px;
-    position: relative;
+    /* position: relative; */
 }
 
 .deal-discount .card {
     margin-top: 50px;
-    margin-left: 535px;
+    margin-left: 330px;
     border-radius: 16px;
-    border: 2px solid #FFF;
+    border: 2px solid #ffffff;
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
     position: absolute;
-
-
 }
 
 .deal-nav {
@@ -391,7 +434,8 @@ ul>li {
 
 .news-img {
     width: 672px;
-    height: 422px;
+    /* height: 422px; */
+    object-fit: cover;
     border-radius: 16px;
     flex-shrink: 0;
     position: relative;
@@ -420,6 +464,19 @@ ul>li {
         font-weight: 400;
     }
 
+    .container {
+        margin: 0 20px;
+        margin-top: 30px;
+    }
+
+    .primary-title {
+        font-size: 30px;
+    }
+
+    .primary-content {
+        margin-top: 50px;
+    }
+
     .head-section {
         text-align: center;
         width: 100%;
@@ -454,22 +511,13 @@ ul>li {
         padding-top: 10px;
     }
 
-    .container {
-        margin: 0 20px;
-        margin-top: 30px;
-    }
-
-    .primary-title {
-        font-size: 20px;
-    }
 
     .header-title {
         padding-top: 32px;
-        font-size: 22px;
+        font-size: 40px;
     }
 
     .header-description {
-        font-size: 1rem;
         width: 304px;
     }
 
@@ -477,7 +525,6 @@ ul>li {
         flex-direction: column;
         row-gap: 16px;
         margin-bottom: 32px;
-
     }
 
     .heade-selection input, select {
@@ -494,16 +541,21 @@ ul>li {
 
     }
 
+    .tours-descrioption {
+        padding-left: 10px;
+    }
+
+    .popular-tour-content {
+        margin-top: 30px;
+    }
+
     .tours-img {
-        width: 380px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .tours-img img, .news-img img {
-        width: 90%;
-    }
-
-    .primary-content {
-        margin-top: 50px;
+        width: 100%;
     }
 
     .destination-content p,
@@ -511,21 +563,28 @@ ul>li {
         width: 360px;
     }
 
-    .destination-content-img {
-        margin: 0;
+    .destination-content-img,
+    .WhyChooseUs-content {
+        grid-template-columns: 1fr;
     }
 
-    .image-container {
-        margin-bottom: 16px;
-    }
-
-    .upper-part .image-container img {
-        height: 176px;
+    .image-container1,
+    .image-container2,
+    .image-container3,
+    .image-container4,
+    .image-container5,
+    .image-container6,
+    .image-container7,
+    .hotel-card,
+    .service-card,
+    .Guarantee-card {
+        grid-column: 1/span 1;
     }
 
 
     .hotel-card, .service-card, .Guarantee-card {
-        width: 290px;
+        width: 400px;
+        margin: 0 30px;
     }
 
     .deal-discount, .deal-discount2 {
@@ -538,21 +597,17 @@ ul>li {
     }
 
     .deal-discount .card, .deal-discount2 .card {
-        width: 320px;
+        width: 400px;
         margin: 10px;
         margin-top: 80px;
     }
 
-    .card-description>h3 {
-        margin-top: 5px;
-    }
-
     .card-description>p {
-        width: 254px;
+        width: 304px;
     }
 
     .newsletter-content {
-        width: 300px;
+        max-width: 460px;
     }
 
     .newsletter-content form * {
@@ -564,16 +619,20 @@ ul>li {
     }
 
     .news-img {
-        width: 400px;
-        height: 230px;
+        width: 500px;
+        height: 330px;
+    }
+
+    .news-img img {
+        width: 100%
     }
 
     .news-img-content {
         width: 214.023px;
         height: 79.268px;
         padding-top: 10px;
-        bottom: 40px;
-        right: 50px;
+        bottom: 50px;
+        right: 10px;
     }
 }
 
@@ -584,10 +643,27 @@ ul>li {
 
     }
 
+    .container {
+        margin: 50px 40px;
+    }
+
+    .primary-content {
+        margin: 0 auto;
+    }
+
+    .primary-content p {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    /* .popular-tour {
+        flex-direction: column;
+    } */
+
     .head-section {
         text-align: center;
-        width: 100%;
-        height: 80%;
+        margin: 0 auto;
+
     }
 
     nav {
@@ -618,36 +694,46 @@ ul>li {
         padding-top: 10px;
     }
 
-    .container {
-        margin: 50px 40px;
-    }
-
-    .primary-content {
-        margin-top: 80px;
-    }
-
     .header-title {
         padding-top: 32px;
         font-size: 50px;
     }
 
     .header-description {
-        font-size: 1rem;
-        width: 600px;
+        width: 500px;
+        margin: 10px auto;
+        padding: 10px;
+        padding-bottom: 20px;
     }
 
     .heade-selection {
-        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+        margin: 0 50px;
+        margin-bottom: 20px;
 
     }
 
-    .heade-selection input, select {
-        width: 120px;
+    .heade-selection input {
+        width: 150px;
+    }
+
+    .heade-selection select {
+        width: 170px;
+    }
+
+    .popular-tour {
+        max-width: 1440px;
+    }
+
+    .popular-tour-content {
+        width: 48%;
     }
 
     .tours-img {
-        width: 1200px;
+        width: 48%;
+        object-fit: cover;
     }
 
     .tours-img img {
@@ -659,8 +745,9 @@ ul>li {
         margin: 0;
     }
 
+
     .destination-content {
-        margin-top: 0;
+        margin: 0 30px;
     }
 
     .destination-content p {
@@ -700,8 +787,8 @@ ul>li {
     }
 
     .news-img img {
-        width: 650px;
-        height: 400px;
+        width: 100%;
+        /* height: 400px; */
     }
 
 
@@ -709,7 +796,7 @@ ul>li {
         width: 324px;
         height: 100px;
         padding-top: 30px;
-        bottom: 80px;
-        right: 40px;
+        bottom: 50px;
+        right: 20px;
     }
 }
